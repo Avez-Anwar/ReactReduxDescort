@@ -1,11 +1,17 @@
 import React from "react";
 import "./Sidebar.css";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
-import AddIcon from "@material-ui/icons/Add"
+import AddIcon from "@material-ui/icons/Add";
 import SidebarChannel from "./SidebarChannel";
 import SignalCellularAltIcon from "@material-ui/icons/SignalCellularAlt";
 import InfoOutlindeIcon from "@material-ui/icons/InfoOutlined";
 import CallIcon from "@material-ui/icons/Call";
+import { Avatar } from "@material-ui/core";
+import MicIcon from "@material-ui/icons/Mic" 
+import HeadsetIcon from "@material-ui/icons/Headset" 
+import SettingIcon from "@material-ui/icons/Settings" 
+import AppleImage from "./images/appleImage.png"
+
 
 function Sidebar() {
   return (
@@ -31,22 +37,48 @@ function Sidebar() {
             <SidebarChannel/>
             <SidebarChannel/>
             <SidebarChannel/>
+            <SidebarChannel/>
+            <SidebarChannel/>
+            <SidebarChannel/>
+            <SidebarChannel/>
+            <SidebarChannel/>
        </div>
       </div>
 
       <div className="sidebar__voice">
+
       <SignalCellularAltIcon
       className="sidebar__voiceIcon"
       fontSize="large"/>
+
       <div className="sidebar__voiceInfo">
       <h3>Voice Connected</h3>
-      <p>stream</p>
+      <p>Stream</p>
       </div>
+
       <div className="sidebar__voiceIcons">
       <InfoOutlindeIcon/>
       <CallIcon/>
       </div>
+
       </div>
+
+      <div className="side__profile">
+      <Avatar src={AppleImage}/>
+      
+      <div className="sidebar__profileInfo">
+      <h3>@johnDoe</h3>
+      <p>#thisIsMyId</p>
+      </div>
+
+      <div className="sidebar__profileIcons">
+      <MicIcon/>
+      <HeadsetIcon/>
+      <SettingIcon/>
+      </div>
+      
+      </div>
+
     </div>
   );
 }
