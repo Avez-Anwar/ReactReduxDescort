@@ -4,8 +4,7 @@ import ChatHeader from './ChatHeader'
 
 function Chat() {
     return (
-        <div>
-           <h1>This is a chat screen</h1> 
+        <div className="chat">
            <ChatHeader/>
         </div>
     )
