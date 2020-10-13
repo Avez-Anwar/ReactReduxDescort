@@ -20,8 +20,10 @@
 .chatHeader__right {
   display: flex;
   align-items: center;
-  justify-content: space-between;
   flex: 0.5;
+  justify-content: space-between;
+
+  /* margin-left: 545px; */
 }
 
 .chatHeader__right > .MuiSvgIcon-root {
